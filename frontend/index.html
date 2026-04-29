@@ -12,6 +12,10 @@
   <input type="number" id="age" placeholder="Age" />
   <br><br>
 
+  <!-- NEW FIELD -->
+  <input type="email" id="email" placeholder="Email" />
+  <br><br>
+
   <button type="button" onclick="sendData()">Send</button>
 
   <p id="result"></p>
@@ -20,11 +24,12 @@
     function sendData() {
       const name = document.getElementById('name').value;
       const age = document.getElementById('age').value;
+      const email = document.getElementById('email').value;
 
       fetch('/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, age })
+        body: JSON.stringify({ name, age, email })
       })
       .then(res => res.json())
       .then(data => {
