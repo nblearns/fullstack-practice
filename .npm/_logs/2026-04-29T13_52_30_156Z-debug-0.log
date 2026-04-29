@@ -1,0 +1,98 @@
+0 verbose cli /usr/src/node/node-v20.14.0-linux-x64/bin/node /usr/src/node/node-v20.14.0-linux-x64/bin/npm
+1 info using npm@10.7.0
+2 info using node@v20.14.0
+3 silly config:load:file:/usr/src/node/node-v20.14.0-linux-x64/lib/node_modules/npm/npmrc
+4 silly config:load:file:/root/.cache/typescript/5.4/.npmrc
+5 silly config:load:file:/root/.npmrc
+6 silly config:load:file:/usr/src/node/node-v20.14.0-linux-x64/etc/npmrc
+7 verbose title npm install @types/express@ts5.4
+8 verbose argv "install" "--ignore-scripts" "@types/express@ts5.4" "--save-dev" "--user-agent" "typesInstaller/5.4.5"
+9 verbose logfile logs-max:10 dir:/root/.npm/_logs/2026-04-29T13_52_30_156Z-
+10 verbose logfile /root/.npm/_logs/2026-04-29T13_52_30_156Z-debug-0.log
+11 silly logfile done cleaning log files
+12 http fetch GET 200 https://registry.npmjs.org/@types%2fexpress 186ms (cache miss)
+13 silly idealTree buildDeps
+14 silly fetch manifest @types/express@5.0.6
+15 silly placeDep ROOT @types/express@5.0.6 OK for:  want: 5.0.6
+16 silly fetch manifest @types/body-parser@*
+17 silly fetch manifest @types/serve-static@^2
+18 silly fetch manifest @types/express-serve-static-core@^5.0.0
+19 http fetch GET 200 https://registry.npmjs.org/@types%2fbody-parser 65ms (cache miss)
+20 http fetch GET 200 https://registry.npmjs.org/@types%2fserve-static 133ms (cache miss)
+21 http fetch GET 200 https://registry.npmjs.org/@types%2fexpress-serve-static-core 176ms (cache miss)
+22 silly placeDep ROOT @types/body-parser@1.19.6 OK for: @types/express@5.0.6 want: *
+23 silly placeDep ROOT @types/express-serve-static-core@5.1.1 OK for: @types/express@5.0.6 want: ^5.0.0
+24 silly placeDep ROOT @types/serve-static@2.2.0 OK for: @types/express@5.0.6 want: ^2
+25 silly fetch manifest @types/node@*
+26 silly fetch manifest @types/connect@*
+27 silly fetch manifest @types/qs@*
+28 silly fetch manifest @types/send@*
+29 silly fetch manifest @types/range-parser@*
+30 silly fetch manifest @types/http-errors@*
+31 http fetch GET 200 https://registry.npmjs.org/@types%2fconnect 70ms (cache miss)
+32 http fetch GET 200 https://registry.npmjs.org/@types%2fqs 78ms (cache miss)
+33 http fetch GET 200 https://registry.npmjs.org/@types%2fsend 136ms (cache miss)
+34 http fetch GET 200 https://registry.npmjs.org/@types%2fhttp-errors 152ms (cache miss)
+35 http fetch GET 200 https://registry.npmjs.org/@types%2frange-parser 154ms (cache miss)
+36 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 326ms (cache miss)
+37 silly placeDep ROOT @types/connect@3.4.38 OK for: @types/body-parser@1.19.6 want: *
+38 silly placeDep ROOT @types/node@25.6.0 OK for: @types/body-parser@1.19.6 want: *
+39 silly fetch manifest undici-types@~7.19.0
+40 http fetch GET 200 https://registry.npmjs.org/undici-types 56ms (cache miss)
+41 silly placeDep ROOT @types/qs@6.15.0 OK for: @types/express-serve-static-core@5.1.1 want: *
+42 silly placeDep ROOT @types/range-parser@1.2.7 OK for: @types/express-serve-static-core@5.1.1 want: *
+43 silly placeDep ROOT @types/send@1.2.1 OK for: @types/express-serve-static-core@5.1.1 want: *
+44 silly placeDep ROOT undici-types@7.19.2 OK for: @types/node@25.6.0 want: ~7.19.0
+45 silly placeDep ROOT @types/http-errors@2.0.5 OK for: @types/serve-static@2.2.0 want: *
+46 silly reify moves {}
+47 silly audit bulk request {
+47 silly audit   'types-registry': [ '0.1.767' ],
+47 silly audit   '@types/express': [ '5.0.6' ],
+47 silly audit   '@types/body-parser': [ '1.19.6' ],
+47 silly audit   '@types/express-serve-static-core': [ '5.1.1' ],
+47 silly audit   '@types/serve-static': [ '2.2.0' ],
+47 silly audit   '@types/connect': [ '3.4.38' ],
+47 silly audit   '@types/node': [ '25.6.0' ],
+47 silly audit   '@types/qs': [ '6.15.0' ],
+47 silly audit   '@types/range-parser': [ '1.2.7' ],
+47 silly audit   '@types/send': [ '1.2.1' ],
+47 silly audit   'undici-types': [ '7.19.2' ],
+47 silly audit   '@types/http-errors': [ '2.0.5' ]
+47 silly audit }
+48 silly tarball no local data for @types/http-errors@https://registry.npmjs.org/@types/http-errors/-/http-errors-2.0.5.tgz. Extracting by manifest.
+49 silly tarball no local data for @types/range-parser@https://registry.npmjs.org/@types/range-parser/-/range-parser-1.2.7.tgz. Extracting by manifest.
+50 silly tarball no local data for @types/send@https://registry.npmjs.org/@types/send/-/send-1.2.1.tgz. Extracting by manifest.
+51 silly tarball no local data for undici-types@https://registry.npmjs.org/undici-types/-/undici-types-7.19.2.tgz. Extracting by manifest.
+52 silly tarball no local data for @types/connect@https://registry.npmjs.org/@types/connect/-/connect-3.4.38.tgz. Extracting by manifest.
+53 silly tarball no local data for @types/serve-static@https://registry.npmjs.org/@types/serve-static/-/serve-static-2.2.0.tgz. Extracting by manifest.
+54 silly tarball no local data for @types/express-serve-static-core@https://registry.npmjs.org/@types/express-serve-static-core/-/express-serve-static-core-5.1.1.tgz. Extracting by manifest.
+55 silly tarball no local data for @types/body-parser@https://registry.npmjs.org/@types/body-parser/-/body-parser-1.19.6.tgz. Extracting by manifest.
+56 silly tarball no local data for @types/node@https://registry.npmjs.org/@types/node/-/node-25.6.0.tgz. Extracting by manifest.
+57 silly tarball no local data for @types/express@https://registry.npmjs.org/@types/express/-/express-5.0.6.tgz. Extracting by manifest.
+58 silly tarball no local data for @types/qs@https://registry.npmjs.org/@types/qs/-/qs-6.15.0.tgz. Extracting by manifest.
+59 http fetch GET 200 https://registry.npmjs.org/@types/connect/-/connect-3.4.38.tgz 71ms (cache miss)
+60 http fetch GET 200 https://registry.npmjs.org/@types/range-parser/-/range-parser-1.2.7.tgz 72ms (cache miss)
+61 http fetch GET 200 https://registry.npmjs.org/@types/send/-/send-1.2.1.tgz 71ms (cache miss)
+62 http fetch GET 200 https://registry.npmjs.org/@types/http-errors/-/http-errors-2.0.5.tgz 73ms (cache miss)
+63 http fetch GET 200 https://registry.npmjs.org/undici-types/-/undici-types-7.19.2.tgz 78ms (cache miss)
+64 http fetch GET 200 https://registry.npmjs.org/@types/body-parser/-/body-parser-1.19.6.tgz 133ms (cache miss)
+65 http fetch GET 200 https://registry.npmjs.org/@types/serve-static/-/serve-static-2.2.0.tgz 138ms (cache miss)
+66 http fetch GET 200 https://registry.npmjs.org/@types/express/-/express-5.0.6.tgz 138ms (cache miss)
+67 http fetch GET 200 https://registry.npmjs.org/@types/qs/-/qs-6.15.0.tgz 137ms (cache miss)
+68 http fetch GET 200 https://registry.npmjs.org/@types/express-serve-static-core/-/express-serve-static-core-5.1.1.tgz 156ms (cache miss)
+69 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 211ms
+70 silly audit report {}
+71 http fetch GET 200 https://registry.npmjs.org/@types/node/-/node-25.6.0.tgz 205ms (cache miss)
+72 silly ADD node_modules/@types/http-errors
+73 silly ADD node_modules/undici-types
+74 silly ADD node_modules/@types/send
+75 silly ADD node_modules/@types/range-parser
+76 silly ADD node_modules/@types/qs
+77 silly ADD node_modules/@types/node
+78 silly ADD node_modules/@types/connect
+79 silly ADD node_modules/@types/serve-static
+80 silly ADD node_modules/@types/express-serve-static-core
+81 silly ADD node_modules/@types/body-parser
+82 silly ADD node_modules/@types/express
+83 verbose exit 0
+84 info ok
